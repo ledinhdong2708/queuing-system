@@ -1,0 +1,19 @@
+.button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 24px;
+  gap: 8px;
+  width: 162px;
+  height: 40px;
+  background: #ff9138;
+  box-shadow: 0px 0px 6px #e7e9f2;
+  border-radius: 8px;
+  color: white;
+  border: none;
+  &:hover {
+    background-color: orange;
+    cursor: pointer;
+  }
+}
