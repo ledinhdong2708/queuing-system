@@ -9,3 +9,23 @@
   border-radius: 8px;
   box-sizing: border-box;
 }
+.inputContainer {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.labelEyeOff {
+  position: absolute;
+  border: none;
+  right: 5px;
+  background-color: rgba($color: #ffffff, $alpha: 0);
+}
+.iconEyeOff {
+  width: 20px;
+  height: 20px;
+}
+.inputCheckBox {
+  display: none;
+}

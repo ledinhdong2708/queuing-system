@@ -4,7 +4,6 @@ import Logo from '../.././assets/images/logo.png'
 import Images from '../.././assets/images/images.jpg'
 import Input from '../../component/Input/Input'
 import Button from '../../component/Button/Button'
-import IconEye from '/public/iconEye.png'
 
 function Login() {
   return (
