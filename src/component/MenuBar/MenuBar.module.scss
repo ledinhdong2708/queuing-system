@@ -1,0 +1,47 @@
+.leftContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  background-color: white;
+}
+.leftContainer a {
+  text-decoration: none;
+  color: #7e7d88;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+.leftContainer button {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  background: #fff2e7;
+  border-radius: 8px;
+  border: none;
+  width: 176px;
+  height: 48px;
+  color: #ff7506;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+.iconDashboard {
+  display: flex;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+}
+.iconDashboard img {
+  width: 20px;
+  height: 20px;
+}
+.iconDashboard p {
+  padding-left: 1rem;
+}

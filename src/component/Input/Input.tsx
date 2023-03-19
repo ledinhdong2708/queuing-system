@@ -5,9 +5,13 @@ import IconEye from '/public/iconEye.png'
 import { clsx } from 'clsx'
 interface InputProps {
   type?: HTMLInputTypeAttribute | undefined
+  disabled?: boolean | undefined
+  placeholder?: string | undefined
 }
 
-const Input: React.FC<InputProps> = ({ type }) => {
+const Input: React.FC<InputProps> = ({ type, disabled, placeholder }) => {
+  const classLabel = clsx(styles.input, 'inputPass')
+  const classEyeOff = clsx(styles.iconEyeOff, 'icEyeOff')
   function handleClick() {
     const inputPass = document.querySelectorAll<HTMLInputElement>('.inputPass')
     const iconEyeOff = document.querySelectorAll<HTMLImageElement>('.icEyeOff')
@@ -27,11 +31,20 @@ const Input: React.FC<InputProps> = ({ type }) => {
       })
     }
   }
-  if (type !== 'password') {
-    return <input type={type} required className={styles.input} />
+  if (disabled === true) {
+    return (
+      <input
+        type={type}
+        disabled={disabled}
+        className={styles.input}
+        placeholder={placeholder}
+        style={{ backgroundColor: '#EAEAEC' }}
+      />
+    )
   }
-  const classLabel = clsx(styles.input, 'inputPass')
-  const classEyeOff = clsx(styles.iconEyeOff, 'icEyeOff')
+  if (type !== 'password') {
+    return <input type={type} disabled={disabled} required className={styles.input} />
+  }
   return (
     <div className={styles.inputContainer}>
       <input type={type} required className={classLabel} />

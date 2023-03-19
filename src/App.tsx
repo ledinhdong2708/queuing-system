@@ -5,6 +5,7 @@ import './assets/styles/app.scss'
 import Login from './pages/Login/Login'
 import SetPass from './pages/SetPass/SetPass'
 import ResetPass from './pages/ResetPass/ResetPass'
+import PersonalInformation from '@pages/PersonalInformation/PersonalInformation'
 
 const App: FC = () => {
   return (
@@ -13,6 +14,7 @@ const App: FC = () => {
         <Route path='/' element={<Login />} />
         <Route path='/forgotpass' element={<SetPass />} />
         <Route path='/resetpass' element={<ResetPass />}></Route>
+        <Route path='/personalinformation' element={<PersonalInformation />}></Route>
       </Routes>
     </div>
   )
