@@ -2,25 +2,17 @@ import s from './PersonalInformation.module.scss'
 import MenuBar from '../.././component/MenuBar/MenuBar'
 import Avatar from '../.././assets/images/avatar.jpg'
 import Input from '../.././component/Input/Input'
-import IconRing from '/public/iconRing.jpg'
+import NavAvatar from '../.././component/NavAvatar/NavAvatar'
+import '../.././assets/styles/app.scss'
 
 const PersonalInformation = () => {
   return (
-    <div className={s.container}>
+    <div className='Container'>
       <MenuBar />
       <div className={s.rightContainer}>
-        <div className={s.navContainer}>
+        <div className='navContainer'>
           <p className={s.pInformation}>Thông tin cá nhân</p>
-          <div className={s.avatarName}>
-            <button className={s.iconRing}>
-              <img src={IconRing} alt='icon ring' />
-            </button>
-            <img src={Avatar} alt='avatar' />
-            <div className={s.desciption}>
-              <p className={s.greeting}>Xin chào</p>
-              <p>Lê Quỳnh Ái Vân</p>
-            </div>
-          </div>
+          <NavAvatar />
         </div>
         <div className={s.information}>
           <div className={s.fristInfoContainer}>

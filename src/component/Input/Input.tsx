@@ -15,6 +15,7 @@ const Input: React.FC<InputProps> = ({ type, disabled, placeholder }) => {
   function handleClick() {
     const inputPass = document.querySelectorAll<HTMLInputElement>('.inputPass')
     const iconEyeOff = document.querySelectorAll<HTMLImageElement>('.icEyeOff')
+
     if ((document.getElementById('inputCheck') as HTMLInputElement).checked) {
       Array.from(inputPass).map((ele) => {
         ele.type = 'text'

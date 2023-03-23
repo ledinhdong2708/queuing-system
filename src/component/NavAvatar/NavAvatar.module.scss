@@ -1,0 +1,27 @@
+.avatarName {
+  display: flex;
+  justify-content: space-around;
+}
+
+.avatarName button {
+  position: relative;
+  right: 2rem;
+}
+
+.avatarName img {
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+}
+
+.greeting {
+  font-size: 12px;
+  color: #7e7d88;
+}
+.iconRing {
+  border-radius: 100%;
+  border: none;
+}
+.desciption {
+  padding-left: 10px;
+}

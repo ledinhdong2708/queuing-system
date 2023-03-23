@@ -3,3 +3,18 @@ $bg-color: #e6e92c;
 body {
   background: $bg-color;
 }
+
+.Container {
+  display: flex;
+  height: 100vh;
+}
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  // margin-top: 20px;
+  // padding-left: 5%;
+  // padding-right: 5%;
+}
+p {
+  margin-bottom: 0;
+}
