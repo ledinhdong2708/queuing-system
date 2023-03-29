@@ -1,10 +1,10 @@
-import MenuBar from '../.././component/MenuBar/MenuBar'
+import MenuBarService from '../.././component/MenuBar/MenuBarService'
 import '../.././assets/styles/app.scss'
 
 const Service = () => {
   return (
     <div className='Container'>
-      <MenuBar />
+      <MenuBarService />
       <h1>Service</h1>
     </div>
   )

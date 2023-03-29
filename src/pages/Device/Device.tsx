@@ -6,21 +6,40 @@ import {
   faCaretLeft,
   faSquarePlus
 } from '@fortawesome/free-solid-svg-icons'
-import MenuBar from '../.././component/MenuBar/MenuBar'
+import MenuBarDevice from '../.././component/MenuBar/MenuBarDevice'
 import '../.././assets/styles/app.scss'
 import s from './Device.module.scss'
 import NavAvatar from '../.././component/NavAvatar/NavAvatar'
 import DropdownActive from '../.././component/DropdownActive/DropdownActive'
 import DropdownConnect from '../.././component/DropdownConnect/DropdownConnect'
+import { Link } from 'react-router-dom'
+import clsx from 'clsx'
+const classReadMore = clsx(s.ReadMore, 'tsReadMore')
+const classAlertContainer = clsx(s.alertContainer, 'tsAlertContainer', 'd-none')
 
 const Device = () => {
+  function handleClick() {
+    const tsAlertContainer = document.querySelector('.tsAlertContainer')
+    tsAlertContainer?.classList.remove('d-none')
+  }
+  function handleClickContainer() {
+    const tsAlertContainer = document.querySelector('.tsAlertContainer')
+    tsAlertContainer?.classList.add('d-none')
+  }
+
   return (
     <div className='Container'>
-      <div className={s.addDevice}>
+      <div role='presentation' onClick={handleClickContainer} className={classAlertContainer}>
+        <div className={s.alertContent}>
+          <p>Khám tim mạch, Khám Sản - Phụ khoa, Khám răng hàm mặt,</p>
+          <p>Khám tai mũi họng, Khám hô hấp, Khám tổng quát</p>
+        </div>
+      </div>
+      <Link to='/device/add-device' className={s.addDevice}>
         <FontAwesomeIcon className={s.iconAdd} icon={faSquarePlus} />
         <p>Thêm thiết bị</p>
-      </div>
-      <MenuBar />
+      </Link>
+      <MenuBarDevice />
       <div className={s.rightContainer}>
         <div className='navContainer'>
           <div className={s.leftNav}>
@@ -74,13 +93,15 @@ const Device = () => {
               <td>Mất kết nối</td>
               <td>
                 <p>Khám tim mạch, Khám mắt...</p>
-                <a href='/device'>Xem thêm</a>
+                <p role='presentation' onClick={handleClick} className={classReadMore}>
+                  Xem thêm
+                </p>
               </td>
               <td>
-                <a href='/device'>Chi tiết</a>
+                <p className={s.tableDetail}>Chi tiết</p>
               </td>
               <td>
-                <a href='/device'>Cập nhật</a>
+                <p className={s.tableUpdate}>Cập nhật</p>
               </td>
             </tr>
             <tr className={s.tableTr}>
@@ -91,13 +112,15 @@ const Device = () => {
               <td>Kết nối</td>
               <td>
                 <p>Khám tim mạch, Khám mắt...</p>
-                <a href='/device'>Xem thêm</a>
+                <p role='presentation' onClick={handleClick} className={classReadMore}>
+                  Xem thêm
+                </p>
               </td>
               <td>
-                <a href='/device'>Chi tiết</a>
+                <p className={s.tableDetail}>Chi tiết</p>
               </td>
               <td>
-                <a href='/device'>Cập nhật</a>
+                <p className={s.tableUpdate}>Cập nhật</p>
               </td>
             </tr>
             <tr>
@@ -108,13 +131,15 @@ const Device = () => {
               <td>Mất kết nối</td>
               <td>
                 <p>Khám tim mạch, Khám mắt...</p>
-                <a href='/device'>Xem thêm</a>
+                <p role='presentation' onClick={handleClick} className={classReadMore}>
+                  Xem thêm
+                </p>
               </td>
               <td>
-                <a href='/device'>Chi tiết</a>
+                <p className={s.tableDetail}>Chi tiết</p>
               </td>
               <td>
-                <a href='/device'>Cập nhật</a>
+                <p className={s.tableUpdate}>Cập nhật</p>
               </td>
             </tr>
             <tr className={s.tableTr}>
@@ -125,13 +150,15 @@ const Device = () => {
               <td>Kết nối</td>
               <td>
                 <p>Khám tim mạch, Khám mắt...</p>
-                <a href='/device'>Xem thêm</a>
+                <p role='presentation' onClick={handleClick} className={classReadMore}>
+                  Xem thêm
+                </p>
               </td>
               <td>
-                <a href='/device'>Chi tiết</a>
+                <p className={s.tableDetail}>Chi tiết</p>
               </td>
               <td>
-                <a href='/device'>Cập nhật</a>
+                <p className={s.tableUpdate}>Cập nhật</p>
               </td>
             </tr>
             <tr>
@@ -142,13 +169,15 @@ const Device = () => {
               <td>Mất kết nối</td>
               <td>
                 <p>Khám tim mạch, Khám mắt...</p>
-                <a href='/device'>Xem thêm</a>
+                <p role='presentation' onClick={handleClick} className={classReadMore}>
+                  Xem thêm
+                </p>
               </td>
               <td>
-                <a href='/device'>Chi tiết</a>
+                <p className={s.tableDetail}>Chi tiết</p>
               </td>
               <td>
-                <a href='/device'>Cập nhật</a>
+                <p className={s.tableUpdate}>Cập nhật</p>
               </td>
             </tr>
             <tr className={s.tableTr}>
@@ -159,13 +188,15 @@ const Device = () => {
               <td>Kết nối</td>
               <td>
                 <p>Khám tim mạch, Khám mắt...</p>
-                <a href='/device'>Xem thêm</a>
+                <p role='presentation' onClick={handleClick} className={classReadMore}>
+                  Xem thêm
+                </p>
               </td>
               <td>
-                <a href='/device'>Chi tiết</a>
+                <p className={s.tableDetail}>Chi tiết</p>
               </td>
               <td>
-                <a href='/device'>Cập nhật</a>
+                <p className={s.tableUpdate}>Cập nhật</p>
               </td>
             </tr>
             <tr>
@@ -176,13 +207,15 @@ const Device = () => {
               <td>Kết nối</td>
               <td>
                 <p>Khám tim mạch, Khám mắt...</p>
-                <a href='/device'>Xem thêm</a>
+                <p role='presentation' onClick={handleClick} className={classReadMore}>
+                  Xem thêm
+                </p>
               </td>
               <td>
-                <a href='/device'>Chi tiết</a>
+                <p className={s.tableDetail}>Chi tiết</p>
               </td>
               <td>
-                <a href='/device'>Cập nhật</a>
+                <p className={s.tableUpdate}>Cập nhật</p>
               </td>
             </tr>
             <tr className={s.tableTr}>
@@ -193,13 +226,15 @@ const Device = () => {
               <td>Kết nối</td>
               <td>
                 <p>Khám tim mạch, Khám mắt...</p>
-                <a href='/device'>Xem thêm</a>
+                <p role='presentation' onClick={handleClick} className={classReadMore}>
+                  Xem thêm
+                </p>
               </td>
               <td>
-                <a href='/device'>Chi tiết</a>
+                <p className={s.tableDetail}>Chi tiết</p>
               </td>
               <td>
-                <a href='/device'>Cập nhật</a>
+                <p className={s.tableUpdate}>Cập nhật</p>
               </td>
             </tr>
             <tr>
@@ -210,13 +245,15 @@ const Device = () => {
               <td>Mất kết nối</td>
               <td>
                 <p>Khám tim mạch, Khám mắt...</p>
-                <a href='/device'>Xem thêm</a>
+                <p role='presentation' onClick={handleClick} className={classReadMore}>
+                  Xem thêm
+                </p>
               </td>
               <td>
-                <a href='/device'>Chi tiết</a>
+                <p className={s.tableDetail}>Chi tiết</p>
               </td>
               <td>
-                <a href='/device'>Cập nhật</a>
+                <p className={s.tableUpdate}>Cập nhật</p>
               </td>
             </tr>
           </tbody>

@@ -9,7 +9,7 @@ import IconDashboard04 from '/public/iconDashboard04.png'
 import IconDashboard05 from '/public/iconDashboard05.png'
 import IconDashboard06 from '/public/iconDashboard06.png'
 
-const MenuBar = () => {
+const MenuBarService = () => {
   const classIconDashboard = clsx(s.iconDashboard, 'tsIconDashboard')
 
   return (
@@ -23,7 +23,7 @@ const MenuBar = () => {
         <img src={IconDashboard02} alt='icon dashboard 02' />
         <p>Thiết bị</p>
       </Link>
-      <Link className={classIconDashboard} to='/service'>
+      <Link style={{ backgroundColor: '#FF7506' }} className={classIconDashboard} to='/service'>
         <img src={IconDashboard03} alt='icon dashboard 03' />
         <p>Dịch vụ</p>
       </Link>
@@ -43,4 +43,4 @@ const MenuBar = () => {
     </div>
   )
 }
-export default MenuBar
+export default MenuBarService

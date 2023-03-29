@@ -9,7 +9,7 @@ import IconDashboard04 from '/public/iconDashboard04.png'
 import IconDashboard05 from '/public/iconDashboard05.png'
 import IconDashboard06 from '/public/iconDashboard06.png'
 
-const MenuBar = () => {
+const MenuBarReport = () => {
   const classIconDashboard = clsx(s.iconDashboard, 'tsIconDashboard')
 
   return (
@@ -31,7 +31,7 @@ const MenuBar = () => {
         <img src={IconDashboard04} alt='icon dashboard 04' />
         <p>Cấp số</p>
       </Link>
-      <Link className={classIconDashboard} to='/report'>
+      <Link style={{ backgroundColor: '#FF7506' }} className={classIconDashboard} to='/report'>
         <img src={IconDashboard05} alt='icon dashboard 05' />
         <p>Báo cáo</p>
       </Link>
@@ -43,4 +43,4 @@ const MenuBar = () => {
     </div>
   )
 }
-export default MenuBar
+export default MenuBarReport

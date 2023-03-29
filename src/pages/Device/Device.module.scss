@@ -10,6 +10,7 @@
   position: fixed;
   right: 0;
   bottom: 50%;
+  text-decoration: none;
   z-index: 1;
 }
 .addDevice p {
@@ -59,10 +60,6 @@
   display: flex;
   position: relative;
 }
-.connectionStatus {
-  padding-left: 1rem;
-  width: 20%;
-}
 .keyWord {
   position: absolute;
   right: 0;
@@ -103,14 +100,16 @@ table {
   position: relative;
   width: 20%;
 }
+.connectionStatus {
+  position: relative;
+  width: 20%;
+  margin-left: 1rem;
+}
 .iconDown {
   position: absolute;
   color: #ff7506;
   top: 50%;
   right: 2%;
-}
-.connectionStatus {
-  position: relative;
 }
 .iconDown2 {
   position: absolute;
@@ -137,4 +136,32 @@ table {
 }
 .pagination li:nth-child(2) {
   background-color: #ff7506;
+}
+
+.alertContainer {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($color: #000000, $alpha: 0.3);
+  z-index: 2;
+}
+.alertContent {
+  padding: 0.3rem;
+  position: absolute;
+  border: 1px solid #ffc89b;
+  background-color: white;
+  border-radius: 8px;
+}
+.ReadMore {
+  color: #4277ff;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.tableDetail , .tableUpdate{
+  color: #4277ff;
+  text-decoration: underline;
+  cursor: pointer;
 }

@@ -11,6 +11,7 @@ import Device from './pages/Device/Device'
 import Service from '@pages/Service/Service'
 import Progression from '@pages/Progression/Progression'
 import Report from '@pages/Report/Report'
+import AddDevice from './pages/Device/AddDevice'
 
 const App: FC = () => {
   return (
@@ -21,6 +22,7 @@ const App: FC = () => {
         <Route path='/resetpass' element={<ResetPass />}></Route>
         <Route path='/personalinformation' element={<PersonalInformation />}></Route>
         <Route path='/device' element={<Device />}></Route>
+        <Route path='/device/add-device' element={<AddDevice />}></Route>
         <Route path='/service' element={<Service />}></Route>
         <Route path='/progression' element={<Progression />}></Route>
         <Route path='/report' element={<Report />}></Route>

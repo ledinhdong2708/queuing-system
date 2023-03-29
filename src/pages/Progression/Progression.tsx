@@ -1,10 +1,10 @@
-import MenuBar from '../.././component/MenuBar/MenuBar'
+import MenuBarProgression from '../.././component/MenuBar/MenuBarProgression'
 import '../.././assets/styles/app.scss'
 
 const Progression = () => {
   return (
     <div className='Container'>
-      <MenuBar />
+      <MenuBarProgression />
       <h1>progression</h1>
     </div>
   )

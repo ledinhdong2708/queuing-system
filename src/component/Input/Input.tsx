@@ -7,9 +7,10 @@ interface InputProps {
   type?: HTMLInputTypeAttribute | undefined
   disabled?: boolean | undefined
   placeholder?: string | undefined
+  id?: string
 }
 
-const Input: React.FC<InputProps> = ({ type, disabled, placeholder }) => {
+const Input: React.FC<InputProps> = ({ type, disabled, placeholder, id }) => {
   const classLabel = clsx(styles.input, 'inputPass')
   const classEyeOff = clsx(styles.iconEyeOff, 'icEyeOff')
   function handleClick() {
@@ -44,7 +45,7 @@ const Input: React.FC<InputProps> = ({ type, disabled, placeholder }) => {
     )
   }
   if (type !== 'password') {
-    return <input type={type} disabled={disabled} required className={styles.input} />
+    return <input id={id} type={type} placeholder={placeholder} disabled={disabled} required className={styles.input} />
   }
   return (
     <div className={styles.inputContainer}>

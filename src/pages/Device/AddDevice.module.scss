@@ -1,0 +1,89 @@
+.rightContainer {
+  width: 90%;
+  background-color: #f6f6f6;
+  padding: 3rem;
+}
+.leftNav {
+  display: flex;
+}
+.leftNav p {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  padding-right: 1rem;
+}
+.leftNav p:nth-child(1) {
+  color: #7e7d88;
+}
+.leftNav p:nth-child(2) {
+  font-size: 13px;
+  color: #7e7d88;
+}
+.leftNav p:nth-child(3) {
+  color: #7e7d88;
+}
+.leftNav p:nth-child(4) {
+  font-size: 13px;
+  color: #7e7d88;
+}
+.leftNav p:nth-child(5) {
+  color: #ff7506;
+}
+.deviceManage {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ff7506;
+}
+.deviceInforContainer {
+  margin-top: 2rem;
+  background-color: white;
+  padding: 1rem 2rem 6rem 2rem;
+  border-radius: 8px;
+}
+.deviceInforContainer .deviceInforContent {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ff7506;
+  margin-bottom: 1rem;
+}
+.deviceInfor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.deviceInfor .DeviceInputContainer {
+  position: relative;
+  width: 49%;
+}
+.deviceInfor .DeviceInputContainer:last-child {
+  width: 100%;
+}
+.deviceInfor label {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+.deviceInfor label span {
+  font-size: 12px;
+  color: red;
+}
+.deviceInfor .note {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #7e7d88;
+}
+.deviceInfor .note span {
+  font-size: 12px;
+  color: red;
+}
+.btnContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.btnContainer button {
+  margin: 0 1rem 0 1rem;
+}
