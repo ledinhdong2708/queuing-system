@@ -18,7 +18,7 @@ const DetailDevice = () => {
             <p>
               <FontAwesomeIcon icon={faChevronRight} />
             </p>
-            <p>Thêm thiết bị</p>
+            <p>Chi tiết thiết bị</p>
           </div>
           <NavAvatar />
         </div>

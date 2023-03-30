@@ -103,7 +103,7 @@ const Device = () => {
                 </Link>
               </td>
               <td>
-                <Link to='/updatedevice' className={s.tableUpdate}>
+                <Link to='update-device' className={s.tableUpdate}>
                   Cập nhật
                 </Link>
               </td>
@@ -126,7 +126,7 @@ const Device = () => {
                 </Link>
               </td>
               <td>
-                <Link to='/updatedevice' className={s.tableUpdate}>
+                <Link to='update-device' className={s.tableUpdate}>
                   Cập nhật
                 </Link>
               </td>
@@ -149,7 +149,7 @@ const Device = () => {
                 </Link>
               </td>
               <td>
-                <Link to='/updatedevice' className={s.tableUpdate}>
+                <Link to='update-device' className={s.tableUpdate}>
                   Cập nhật
                 </Link>
               </td>
@@ -172,7 +172,7 @@ const Device = () => {
                 </Link>
               </td>
               <td>
-                <Link to='/updatedevice' className={s.tableUpdate}>
+                <Link to='update-device' className={s.tableUpdate}>
                   Cập nhật
                 </Link>
               </td>
@@ -195,7 +195,7 @@ const Device = () => {
                 </Link>
               </td>
               <td>
-                <Link to='/updatedevice' className={s.tableUpdate}>
+                <Link to='update-device' className={s.tableUpdate}>
                   Cập nhật
                 </Link>
               </td>
@@ -218,7 +218,7 @@ const Device = () => {
                 </Link>
               </td>
               <td>
-                <Link to='/updatedevice' className={s.tableUpdate}>
+                <Link to='update-device' className={s.tableUpdate}>
                   Cập nhật
                 </Link>
               </td>
@@ -241,7 +241,7 @@ const Device = () => {
                 </Link>
               </td>
               <td>
-                <Link to='/updatedevice' className={s.tableUpdate}>
+                <Link to='update-device' className={s.tableUpdate}>
                   Cập nhật
                 </Link>
               </td>
@@ -264,7 +264,7 @@ const Device = () => {
                 </Link>
               </td>
               <td>
-                <Link to='/updatedevice' className={s.tableUpdate}>
+                <Link to='update-device' className={s.tableUpdate}>
                   Cập nhật
                 </Link>
               </td>
@@ -287,7 +287,7 @@ const Device = () => {
                 </Link>
               </td>
               <td>
-                <Link to='/updatedevice' className={s.tableUpdate}>
+                <Link to='update-device' className={s.tableUpdate}>
                   Cập nhật
                 </Link>
               </td>
