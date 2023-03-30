@@ -2,12 +2,14 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  width: 10%;
+  width: 20%;
   background-color: white;
 }
+
 .logo {
   width: 80%;
 }
+
 .leftContainer button {
   position: absolute;
   left: 0;
@@ -27,6 +29,7 @@
   font-size: 16px;
   line-height: 24px;
 }
+
 .iconDashboard {
   display: flex;
   align-items: center;
@@ -38,16 +41,19 @@
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
+
   &:hover {
     background-color: #fff2e7;
     color: #7e7d88;
   }
 }
+
 .iconDashboard img {
   width: 20px;
   height: 20px;
   // filter: brightness(0) invert(1);
 }
+
 .iconDashboard p {
   padding-left: 1rem;
   margin: revert !important;

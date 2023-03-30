@@ -12,6 +12,7 @@ import Service from '@pages/Service/Service'
 import Progression from '@pages/Progression/Progression'
 import Report from '@pages/Report/Report'
 import AddDevice from './pages/Device/AddDevice'
+import DetailDevice from '@pages/Device/DetailDevice'
 
 const App: FC = () => {
   return (
@@ -26,6 +27,7 @@ const App: FC = () => {
         <Route path='/service' element={<Service />}></Route>
         <Route path='/progression' element={<Progression />}></Route>
         <Route path='/report' element={<Report />}></Route>
+        <Route path='/device/detail-device' element={<DetailDevice />}></Route>
       </Routes>
     </div>
   )

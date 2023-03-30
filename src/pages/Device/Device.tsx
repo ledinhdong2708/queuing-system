@@ -98,10 +98,14 @@ const Device = () => {
                 </p>
               </td>
               <td>
-                <p className={s.tableDetail}>Chi tiết</p>
+                <Link to='detail-device' className={s.tableDetail}>
+                  Chi tiết
+                </Link>
               </td>
               <td>
-                <p className={s.tableUpdate}>Cập nhật</p>
+                <Link to='/updatedevice' className={s.tableUpdate}>
+                  Cập nhật
+                </Link>
               </td>
             </tr>
             <tr className={s.tableTr}>
@@ -117,10 +121,14 @@ const Device = () => {
                 </p>
               </td>
               <td>
-                <p className={s.tableDetail}>Chi tiết</p>
+                <Link to='detail-device' className={s.tableDetail}>
+                  Chi tiết
+                </Link>
               </td>
               <td>
-                <p className={s.tableUpdate}>Cập nhật</p>
+                <Link to='/updatedevice' className={s.tableUpdate}>
+                  Cập nhật
+                </Link>
               </td>
             </tr>
             <tr>
@@ -136,10 +144,14 @@ const Device = () => {
                 </p>
               </td>
               <td>
-                <p className={s.tableDetail}>Chi tiết</p>
+                <Link to='detail-device' className={s.tableDetail}>
+                  Chi tiết
+                </Link>
               </td>
               <td>
-                <p className={s.tableUpdate}>Cập nhật</p>
+                <Link to='/updatedevice' className={s.tableUpdate}>
+                  Cập nhật
+                </Link>
               </td>
             </tr>
             <tr className={s.tableTr}>
@@ -155,10 +167,14 @@ const Device = () => {
                 </p>
               </td>
               <td>
-                <p className={s.tableDetail}>Chi tiết</p>
+                <Link to='detail-device' className={s.tableDetail}>
+                  Chi tiết
+                </Link>
               </td>
               <td>
-                <p className={s.tableUpdate}>Cập nhật</p>
+                <Link to='/updatedevice' className={s.tableUpdate}>
+                  Cập nhật
+                </Link>
               </td>
             </tr>
             <tr>
@@ -174,10 +190,14 @@ const Device = () => {
                 </p>
               </td>
               <td>
-                <p className={s.tableDetail}>Chi tiết</p>
+                <Link to='detail-device' className={s.tableDetail}>
+                  Chi tiết
+                </Link>
               </td>
               <td>
-                <p className={s.tableUpdate}>Cập nhật</p>
+                <Link to='/updatedevice' className={s.tableUpdate}>
+                  Cập nhật
+                </Link>
               </td>
             </tr>
             <tr className={s.tableTr}>
@@ -193,10 +213,14 @@ const Device = () => {
                 </p>
               </td>
               <td>
-                <p className={s.tableDetail}>Chi tiết</p>
+                <Link to='detail-device' className={s.tableDetail}>
+                  Chi tiết
+                </Link>
               </td>
               <td>
-                <p className={s.tableUpdate}>Cập nhật</p>
+                <Link to='/updatedevice' className={s.tableUpdate}>
+                  Cập nhật
+                </Link>
               </td>
             </tr>
             <tr>
@@ -212,10 +236,14 @@ const Device = () => {
                 </p>
               </td>
               <td>
-                <p className={s.tableDetail}>Chi tiết</p>
+                <Link to='detail-device' className={s.tableDetail}>
+                  Chi tiết
+                </Link>
               </td>
               <td>
-                <p className={s.tableUpdate}>Cập nhật</p>
+                <Link to='/updatedevice' className={s.tableUpdate}>
+                  Cập nhật
+                </Link>
               </td>
             </tr>
             <tr className={s.tableTr}>
@@ -231,10 +259,14 @@ const Device = () => {
                 </p>
               </td>
               <td>
-                <p className={s.tableDetail}>Chi tiết</p>
+                <Link to='detail-device' className={s.tableDetail}>
+                  Chi tiết
+                </Link>
               </td>
               <td>
-                <p className={s.tableUpdate}>Cập nhật</p>
+                <Link to='/updatedevice' className={s.tableUpdate}>
+                  Cập nhật
+                </Link>
               </td>
             </tr>
             <tr>
@@ -250,10 +282,14 @@ const Device = () => {
                 </p>
               </td>
               <td>
-                <p className={s.tableDetail}>Chi tiết</p>
+                <Link to='detail-device' className={s.tableDetail}>
+                  Chi tiết
+                </Link>
               </td>
               <td>
-                <p className={s.tableUpdate}>Cập nhật</p>
+                <Link to='/updatedevice' className={s.tableUpdate}>
+                  Cập nhật
+                </Link>
               </td>
             </tr>
           </tbody>
