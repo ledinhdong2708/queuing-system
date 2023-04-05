@@ -189,3 +189,17 @@ table {
   text-decoration: underline;
   cursor: pointer;
 }
+.offIcon {
+  color: red;
+  font-size: 0.5rem;
+  position: relative;
+  bottom: 0.1rem;
+  margin-right: 0.2rem;
+}
+.onIcon {
+  color: #35c75a;
+  font-size: 0.5rem;
+  position: relative;
+  bottom: 0.1rem;
+  margin-right: 0.2rem;
+}

@@ -4,7 +4,8 @@ import {
   faMagnifyingGlass,
   faCaretRight,
   faCaretLeft,
-  faSquarePlus
+  faSquarePlus,
+  faCircle
 } from '@fortawesome/free-solid-svg-icons'
 import MenuBarDevice from '../.././component/MenuBar/MenuBarDevice'
 import '../.././assets/styles/app.scss'
@@ -65,7 +66,7 @@ const Device = () => {
             <div className={s.keyWord}>
               <p>Từ khóa</p>
               <div className={s.inputContainer}>
-                <input className={s.search} type='text' />
+                <input placeholder='Nhập từ khóa' className={s.search} type='text' />
                 <FontAwesomeIcon className={s.iconSearch} style={{ color: '#FF7506' }} icon={faMagnifyingGlass} />
               </div>
             </div>
@@ -89,8 +90,14 @@ const Device = () => {
               <th scope='row'>KIO_01</th>
               <td>Kiosk</td>
               <td>192.168.1.10</td>
-              <td>Ngưng hoạt động</td>
-              <td>Mất kết nối</td>
+              <td>
+                <FontAwesomeIcon className={s.offIcon} icon={faCircle} />
+                Ngưng hoạt động
+              </td>
+              <td>
+                <FontAwesomeIcon className={s.offIcon} icon={faCircle} />
+                Mất kết nối
+              </td>
               <td>
                 <p>Khám tim mạch, Khám mắt...</p>
                 <p role='presentation' onClick={handleClick} className={classReadMore}>
@@ -112,8 +119,14 @@ const Device = () => {
               <th scope='row'>KIO_01</th>
               <td>Kiosk</td>
               <td>192.168.1.10</td>
-              <td>Hoạt động</td>
-              <td>Kết nối</td>
+              <td>
+                <FontAwesomeIcon className={s.onIcon} icon={faCircle} />
+                Hoạt động
+              </td>
+              <td>
+                <FontAwesomeIcon className={s.onIcon} icon={faCircle} />
+                Kết nối
+              </td>
               <td>
                 <p>Khám tim mạch, Khám mắt...</p>
                 <p role='presentation' onClick={handleClick} className={classReadMore}>
@@ -135,8 +148,14 @@ const Device = () => {
               <th scope='row'>KIO_01</th>
               <td>Kiosk</td>
               <td>192.168.1.10</td>
-              <td>Hoạt động</td>
-              <td>Mất kết nối</td>
+              <td>
+                <FontAwesomeIcon className={s.onIcon} icon={faCircle} />
+                Hoạt động
+              </td>
+              <td>
+                <FontAwesomeIcon className={s.offIcon} icon={faCircle} />
+                Mất kết nối
+              </td>
               <td>
                 <p>Khám tim mạch, Khám mắt...</p>
                 <p role='presentation' onClick={handleClick} className={classReadMore}>
@@ -158,8 +177,14 @@ const Device = () => {
               <th scope='row'>KIO_01</th>
               <td>Kiosk</td>
               <td>192.168.1.10</td>
-              <td>Ngưng hoạt động</td>
-              <td>Kết nối</td>
+              <td>
+                <FontAwesomeIcon className={s.offIcon} icon={faCircle} />
+                Ngưng hoạt động
+              </td>
+              <td>
+                <FontAwesomeIcon className={s.onIcon} icon={faCircle} />
+                Kết nối
+              </td>
               <td>
                 <p>Khám tim mạch, Khám mắt...</p>
                 <p role='presentation' onClick={handleClick} className={classReadMore}>
@@ -181,8 +206,14 @@ const Device = () => {
               <th scope='row'>KIO_01</th>
               <td>Kiosk</td>
               <td>192.168.1.10</td>
-              <td>Hoạt động</td>
-              <td>Mất kết nối</td>
+              <td>
+                <FontAwesomeIcon className={s.onIcon} icon={faCircle} />
+                Hoạt động
+              </td>
+              <td>
+                <FontAwesomeIcon className={s.offIcon} icon={faCircle} />
+                Mất kết nối
+              </td>
               <td>
                 <p>Khám tim mạch, Khám mắt...</p>
                 <p role='presentation' onClick={handleClick} className={classReadMore}>
@@ -204,8 +235,14 @@ const Device = () => {
               <th scope='row'>KIO_01</th>
               <td>Kiosk</td>
               <td>192.168.1.10</td>
-              <td>Hoạt động</td>
-              <td>Kết nối</td>
+              <td>
+                <FontAwesomeIcon className={s.onIcon} icon={faCircle} />
+                Hoạt động
+              </td>
+              <td>
+                <FontAwesomeIcon className={s.onIcon} icon={faCircle} />
+                Kết nối
+              </td>
               <td>
                 <p>Khám tim mạch, Khám mắt...</p>
                 <p role='presentation' onClick={handleClick} className={classReadMore}>
@@ -227,8 +264,14 @@ const Device = () => {
               <th scope='row'>KIO_01</th>
               <td>Kiosk</td>
               <td>192.168.1.10</td>
-              <td>Ngưng hoạt động</td>
-              <td>Kết nối</td>
+              <td>
+                <FontAwesomeIcon className={s.offIcon} icon={faCircle} />
+                Ngưng hoạt động
+              </td>
+              <td>
+                <FontAwesomeIcon className={s.onIcon} icon={faCircle} />
+                Kết nối
+              </td>
               <td>
                 <p>Khám tim mạch, Khám mắt...</p>
                 <p role='presentation' onClick={handleClick} className={classReadMore}>
@@ -250,8 +293,14 @@ const Device = () => {
               <th scope='row'>KIO_01</th>
               <td>Kiosk</td>
               <td>192.168.1.10</td>
-              <td>Hoạt động</td>
-              <td>Kết nối</td>
+              <td>
+                <FontAwesomeIcon className={s.onIcon} icon={faCircle} />
+                Hoạt động
+              </td>
+              <td>
+                <FontAwesomeIcon className={s.onIcon} icon={faCircle} />
+                Kết nối
+              </td>
               <td>
                 <p>Khám tim mạch, Khám mắt...</p>
                 <p role='presentation' onClick={handleClick} className={classReadMore}>
@@ -273,8 +322,14 @@ const Device = () => {
               <th scope='row'>KIO_01</th>
               <td>Kiosk</td>
               <td>192.168.1.10</td>
-              <td>Hoạt động</td>
-              <td>Mất kết nối</td>
+              <td>
+                <FontAwesomeIcon className={s.onIcon} icon={faCircle} />
+                Hoạt động
+              </td>
+              <td>
+                <FontAwesomeIcon className={s.offIcon} icon={faCircle} />
+                Mất kết nối
+              </td>
               <td>
                 <p>Khám tim mạch, Khám mắt...</p>
                 <p role='presentation' onClick={handleClick} className={classReadMore}>

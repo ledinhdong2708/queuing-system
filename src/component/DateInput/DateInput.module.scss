@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  align-items: center;
+}
+.startDate {
+  display: flex;
+  width: 9.5rem;
+  color: #a9a9b0;
+  padding: 10px 2.3rem;
+  border: 1.5px solid #d4d4d7;
+  border-radius: 8px;
+  background: #ffffff;
+}
+.dateInputContainer {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.iconDate {
+  position: absolute;
+  z-index: 1;
+  padding: 0 0.8rem 0 0.8rem;
+  font-size: 14px;
+  color: #ff7506;
+}
+.iconNext {
+  color: #535261;
+  font-size: 12px;
+  margin: 0 1rem 0 1rem;
+}
