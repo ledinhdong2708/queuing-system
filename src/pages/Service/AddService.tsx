@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import MenuBarService from '../.././component/MenuBar/MenuBarService'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
+import { faChevronRight, faCheck } from '@fortawesome/free-solid-svg-icons'
 import NavAvatar from '../.././component/NavAvatar/NavAvatar'
 import Button from '../.././component/Button/Button'
 import s from './AddService.module.scss'
@@ -26,11 +26,12 @@ const AddService = () => {
   //     console.log(element);
 
   //   }
-  //   function handleCheck() {
-  //     const checkBox = document.querySelector('.checkBox') as HTMLDivElement
-  //     // checkBox.setAttribute("style", "background-color:red;")
-  //     checkBox.classList.toggle('lele')
-  //   }
+  function handleCheck() {
+    const checkBox = document.querySelector('.checkBox') as HTMLDivElement
+    checkBox.classList.toggle('lele')
+    const right = document.querySelector('.right') as HTMLParagraphElement
+    right.classList.toggle('block')
+  }
   return (
     <div className='Container'>
       <MenuBarService />
@@ -73,23 +74,54 @@ const AddService = () => {
             </div>
           </div>
           <p className={s.serviceInforContent}>Quy tắc cắp số</p>
-          {/* <div className={s.autoBoost}>
+          <div className={s.autoBoost}>
             <label className={s.checkboxContainer}>
-              <div className='checkBox'></div>
+              <div className='checkBox'>
+                <FontAwesomeIcon className='iconCheck' icon={faCheck} />
+              </div>
               <input id='autoBoost' type='checkbox' onChange={handleCheck} />
               <p>Tăng tự động từ:</p>
             </label>
-            <input type='number' placeholder='0001' />
-            <p>đến</p>
-            <input type='number' placeholder='0009' />
+            <input className={s.numberInput} type='number' placeholder='0001' />
+            <p className={s.come}>đến</p>
+            <input className={s.numberInput} type='number' placeholder='0009' />
           </div>
-          <div className={s.prefix}></div>
-          <div className={s.surdix}></div>
-          <div className={s.reset}></div> */}
+          <div className={s.prefix}>
+            <label className={s.checkboxContainer}>
+              <div className='checkBox'>
+                <FontAwesomeIcon className='iconCheck' icon={faCheck} />
+              </div>
+              <input id='autoBoost' type='checkbox' onChange={handleCheck} />
+              <p>Prefix:</p>
+            </label>
+            <input className={s.numberInput} type='number' placeholder='0001' />
+          </div>
+          <div className={s.surfix}>
+            <label className={s.checkboxContainer}>
+              <div className='checkBox'>
+                <FontAwesomeIcon className='iconCheck' icon={faCheck} />
+              </div>
+              <input id='autoBoost' type='checkbox' onChange={handleCheck} />
+              <p>Surfix:</p>
+            </label>
+            <input className={s.numberInput} type='number' placeholder='0001' />
+          </div>
+          <div className={s.reset}>
+            <label className={s.checkboxContainer}>
+              <div className='checkBox'>
+                <FontAwesomeIcon className='iconCheck' icon={faCheck} />
+              </div>
+              <input id='autoBoost' type='checkbox' onChange={handleCheck} />
+              <p>Reset mỗi ngày</p>
+            </label>
+            <p className={s.note}>
+              <span>✱</span>Là trường thông tin bắt buộc
+            </p>
+          </div>
         </div>
         <div className={s.btnContainer}>
           <Button onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} style={btnStyle} name='Hủy bỏ' />
-          <Button name='Thêm thiết bị' />
+          <Button name='Thêm dịch vụ' />
         </div>
       </div>
     </div>

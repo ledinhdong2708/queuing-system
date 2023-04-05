@@ -8,6 +8,7 @@ body {
   display: flex;
   height: 100vh;
 }
+
 .navContainer {
   display: flex;
   justify-content: space-between;
@@ -15,9 +16,25 @@ body {
   // padding-left: 5%;
   // padding-right: 5%;
 }
+
 p {
   margin-bottom: 0;
 }
+
+// Checkbox custom
+.checkBox {
+  position: relative;
+}
+
+.iconCheck {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  color: white;
+}
+
 .lele {
-  background-color: red;
+  background-color: #0275fe;
 }
