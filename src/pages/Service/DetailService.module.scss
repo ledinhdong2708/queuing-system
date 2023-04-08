@@ -1,0 +1,62 @@
+.serviceInforContainer {
+  display: flex;
+}
+.serviceInforContainerLeft {
+  width: 30%;
+  background: #ffffff;
+  box-shadow: 2px 2px 8px rgba(232, 239, 244, 0.8);
+  border-radius: 12px;
+  padding: 1rem;
+}
+.serviceInforContainerLeft .heading {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ff7506;
+}
+.autoBoost,
+.prefix,
+.reset,
+.example {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0 1rem 0;
+}
+.autoBoost p:nth-of-type(1),
+.prefix p,
+.reset p {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  width: 40%;
+}
+.autoBoost p:nth-of-type(2) {
+  display: inline-block;
+  margin: 0 0.5rem 0 0.5rem;
+}
+.autoBoost input,
+.prefix input {
+  background: #ffffff;
+  width: 61px;
+  height: 44px;
+  border: 1.5px solid #d4d4d7;
+  border-radius: 8px;
+  padding-left: 0.8rem;
+}
+.detailInfor div {
+  display: flex;
+}
+.detailInfor p {
+  width: 35%;
+  padding: 0;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+.serviceInforContainerRight {
+  width: 64%;
+  background: #ffffff;
+  box-shadow: 2px 2px 8px rgba(232, 239, 244, 0.8);
+  border-radius: 12px;
+  padding: 1rem;
+}

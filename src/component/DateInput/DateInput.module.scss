@@ -4,9 +4,9 @@
 }
 .startDate {
   display: flex;
-  width: 9.5rem;
+  width: 7.6rem;
   color: #a9a9b0;
-  padding: 10px 2.3rem;
+  padding: 10px 1.5rem;
   border: 1.5px solid #d4d4d7;
   border-radius: 8px;
   background: #ffffff;
@@ -19,12 +19,12 @@
 .iconDate {
   position: absolute;
   z-index: 1;
-  padding: 0 0.8rem 0 0.8rem;
+  margin-left: 0.5rem;
   font-size: 14px;
   color: #ff7506;
 }
 .iconNext {
   color: #535261;
   font-size: 12px;
-  margin: 0 1rem 0 1rem;
+  margin: 0 0.3rem 0 0.3rem;
 }

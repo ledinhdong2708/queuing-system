@@ -21,17 +21,23 @@ const AddService = () => {
     color: isHover ? 'white' : '#FF9138',
     backgroundColor: isHover ? '#DC3545' : '#FFF2E7'
   }
-  //   const element  =  document.getElementById("autoBoost") as HTMLInputElement;
-  //   if(element.checked){
-  //     console.log(element);
-
-  //   }
   function handleCheck() {
-    const checkBox = document.querySelector('.checkBox') as HTMLDivElement
-    checkBox.classList.toggle('lele')
-    const right = document.querySelector('.right') as HTMLParagraphElement
-    right.classList.toggle('block')
+    const checkBox = document.querySelectorAll('.checkBox')
+    checkBox[0].classList.toggle('changeCheckBox')
   }
+  function handleCheck1() {
+    const checkBox = document.querySelectorAll('.checkBox')
+    checkBox[1].classList.toggle('changeCheckBox')
+  }
+  function handleCheck2() {
+    const checkBox = document.querySelectorAll('.checkBox')
+    checkBox[2].classList.toggle('changeCheckBox')
+  }
+  function handleCheck3() {
+    const checkBox = document.querySelectorAll('.checkBox')
+    checkBox[3].classList.toggle('changeCheckBox')
+  }
+
   return (
     <div className='Container'>
       <MenuBarService />
@@ -79,7 +85,7 @@ const AddService = () => {
               <div className='checkBox'>
                 <FontAwesomeIcon className='iconCheck' icon={faCheck} />
               </div>
-              <input id='autoBoost' type='checkbox' onChange={handleCheck} />
+              <input className='autoBoost' type='checkbox' onChange={handleCheck} />
               <p>Tăng tự động từ:</p>
             </label>
             <input className={s.numberInput} type='number' placeholder='0001' />
@@ -91,7 +97,7 @@ const AddService = () => {
               <div className='checkBox'>
                 <FontAwesomeIcon className='iconCheck' icon={faCheck} />
               </div>
-              <input id='autoBoost' type='checkbox' onChange={handleCheck} />
+              <input className='autoBoost' type='checkbox' onChange={handleCheck1} />
               <p>Prefix:</p>
             </label>
             <input className={s.numberInput} type='number' placeholder='0001' />
@@ -101,7 +107,7 @@ const AddService = () => {
               <div className='checkBox'>
                 <FontAwesomeIcon className='iconCheck' icon={faCheck} />
               </div>
-              <input id='autoBoost' type='checkbox' onChange={handleCheck} />
+              <input className='autoBoost' type='checkbox' onChange={handleCheck2} />
               <p>Surfix:</p>
             </label>
             <input className={s.numberInput} type='number' placeholder='0001' />
@@ -111,7 +117,7 @@ const AddService = () => {
               <div className='checkBox'>
                 <FontAwesomeIcon className='iconCheck' icon={faCheck} />
               </div>
-              <input id='autoBoost' type='checkbox' onChange={handleCheck} />
+              <input className='autoBoost' type='checkbox' onChange={handleCheck3} />
               <p>Reset mỗi ngày</p>
             </label>
             <p className={s.note}>

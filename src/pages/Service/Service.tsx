@@ -75,7 +75,7 @@ const Service = () => {
                 Ngưng hoạt động
               </td>
               <td>
-                <Link to='detail-device' className={s.tableDetail}>
+                <Link to='detail-service' className={s.tableDetail}>
                   Chi tiết
                 </Link>
               </td>
@@ -94,7 +94,7 @@ const Service = () => {
                 Hoạt động
               </td>
               <td>
-                <Link to='detail-device' className={s.tableDetail}>
+                <Link to='detail-service' className={s.tableDetail}>
                   Chi tiết
                 </Link>
               </td>
@@ -113,7 +113,7 @@ const Service = () => {
                 Hoạt động
               </td>
               <td>
-                <Link to='detail-device' className={s.tableDetail}>
+                <Link to='detail-service' className={s.tableDetail}>
                   Chi tiết
                 </Link>
               </td>
@@ -132,7 +132,7 @@ const Service = () => {
                 Ngưng hoạt động
               </td>
               <td>
-                <Link to='detail-device' className={s.tableDetail}>
+                <Link to='detail-service' className={s.tableDetail}>
                   Chi tiết
                 </Link>
               </td>
@@ -151,7 +151,7 @@ const Service = () => {
                 Hoạt động
               </td>
               <td>
-                <Link to='detail-device' className={s.tableDetail}>
+                <Link to='detail-service' className={s.tableDetail}>
                   Chi tiết
                 </Link>
               </td>
@@ -170,7 +170,7 @@ const Service = () => {
                 Hoạt động
               </td>
               <td>
-                <Link to='detail-device' className={s.tableDetail}>
+                <Link to='detail-service' className={s.tableDetail}>
                   Chi tiết
                 </Link>
               </td>
@@ -189,7 +189,7 @@ const Service = () => {
                 Ngưng hoạt động
               </td>
               <td>
-                <Link to='detail-device' className={s.tableDetail}>
+                <Link to='detail-service' className={s.tableDetail}>
                   Chi tiết
                 </Link>
               </td>
@@ -208,7 +208,7 @@ const Service = () => {
                 Hoạt động
               </td>
               <td>
-                <Link to='detail-device' className={s.tableDetail}>
+                <Link to='detail-service' className={s.tableDetail}>
                   Chi tiết
                 </Link>
               </td>
@@ -227,7 +227,7 @@ const Service = () => {
                 Hoạt động
               </td>
               <td>
-                <Link to='detail-device' className={s.tableDetail}>
+                <Link to='detail-service' className={s.tableDetail}>
                   Chi tiết
                 </Link>
               </td>

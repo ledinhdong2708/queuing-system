@@ -15,6 +15,7 @@ import AddDevice from './pages/Device/AddDevice'
 import DetailDevice from '@pages/Device/DetailDevice'
 import UpdateDevice from '@pages/Device/UpdateDevice'
 import AddService from '@pages/Service/AddService'
+import DetailService from '@pages/Service/DetailService'
 
 const App: FC = () => {
   return (
@@ -32,6 +33,7 @@ const App: FC = () => {
         <Route path='/device/detail-device' element={<DetailDevice />}></Route>
         <Route path='/device/update-device' element={<UpdateDevice />}></Route>
         <Route path='/service/add-service' element={<AddService />}></Route>
+        <Route path='/service/detail-service' element={<DetailService />}></Route>
       </Routes>
     </div>
   )
