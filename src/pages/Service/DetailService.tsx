@@ -4,33 +4,46 @@ import {
   faChevronRight,
   faCaretRight,
   faCaretLeft,
-  faSquarePlus,
-  faMagnifyingGlass
+  faCircleLeft,
+  faMagnifyingGlass,
+  faCircle,
+  faSquarePen
 } from '@fortawesome/free-solid-svg-icons'
 import MenuBarService from '../.././component/MenuBar/MenuBarService'
 import s from './Service.module.scss'
 import sDetail from './DetailService.module.scss'
 import NavAvatar from '../.././component/NavAvatar/NavAvatar'
 import '../.././assets/styles/app.scss'
-import DropdownActive from '../.././component/DropdownActive/DropdownActive'
+import DropdownDetailService from '../.././component/DropdownDetailService/DropdownDetailService'
 import DateInput from '../.././component/DateInput/DateInput'
 
 const DetailService = () => {
   return (
     <div className='Container'>
       <MenuBarService />
-      <Link to='/service/add-service' className={s.addDevice}>
-        <FontAwesomeIcon className={s.iconAdd} icon={faSquarePlus} />
-        <p>Thêm dịch vụ</p>
-      </Link>
+      <div className={sDetail.functionButton}>
+        <Link to='update-list-service' className={sDetail.updateListContainer}>
+          <FontAwesomeIcon className={sDetail.iconUpdateList} icon={faSquarePen} />
+          <p>Cập nhật danh sách</p>
+        </Link>
+        <hr />
+        <Link to='/service' className={sDetail.backContainer}>
+          <FontAwesomeIcon className={sDetail.iconBack} icon={faCircleLeft} />
+          <p>Quay lại</p>
+        </Link>
+      </div>
       <div className={s.rightContainer}>
         <div className='navContainer'>
           <div className={s.leftNav}>
-            <p>Thiết bị</p>
+            <p className={sDetail.pContent}>Thiết bị</p>
             <p>
-              <FontAwesomeIcon icon={faChevronRight} />
+              <FontAwesomeIcon className={sDetail.hyphenIcon} icon={faChevronRight} />
             </p>
-            <p>Danh sách dịch vụ</p>
+            <p className={sDetail.pContent}>Danh sách dịch vụ</p>
+            <p>
+              <FontAwesomeIcon className={sDetail.hyphenIcon} icon={faChevronRight} />
+            </p>
+            <p className={sDetail.pContent}>Chi tiết</p>
           </div>
           <NavAvatar />
         </div>
@@ -76,8 +89,8 @@ const DetailService = () => {
           <div className={sDetail.serviceInforContainerRight}>
             <div className={s.inputDevice}>
               <div className={s.activeStatus}>
-                <p>Trạng thái hoạt đông</p>
-                <DropdownActive />
+                <p>Trạng thái</p>
+                <DropdownDetailService />
               </div>
               <div className={s.connectionStatus}>
                 <p>Chọn thời gian</p>
@@ -101,35 +114,59 @@ const DetailService = () => {
               <tbody>
                 <tr>
                   <td>2010001</td>
-                  <td>Đã hoàn thành</td>
+                  <td className={sDetail.iconContainer}>
+                    <FontAwesomeIcon className={sDetail.accomplished} icon={faCircle} />
+                    Đã hoàn thành
+                  </td>
                 </tr>
                 <tr>
                   <td>2010002</td>
-                  <td>Đã hoàn thành</td>
+                  <td className={sDetail.iconContainer}>
+                    <FontAwesomeIcon className={sDetail.accomplished} icon={faCircle} />
+                    Đã hoàn thành
+                  </td>
                 </tr>
                 <tr>
                   <td>2010003</td>
-                  <td>Đang thực hiện</td>
+                  <td className={sDetail.iconContainer}>
+                    <FontAwesomeIcon className={sDetail.processing} icon={faCircle} />
+                    Đang thực hiện
+                  </td>
                 </tr>
                 <tr>
                   <td>2010004</td>
-                  <td>Vắng</td>
+                  <td className={sDetail.iconContainer}>
+                    <FontAwesomeIcon className={sDetail.absent} icon={faCircle} />
+                    Vắng
+                  </td>
                 </tr>
                 <tr>
                   <td>2010005</td>
-                  <td>Đã hoàn thành</td>
+                  <td className={sDetail.iconContainer}>
+                    <FontAwesomeIcon className={sDetail.accomplished} icon={faCircle} />
+                    Đã hoàn thành
+                  </td>
                 </tr>
                 <tr>
                   <td>2010006</td>
-                  <td>Đang thực hiện</td>
+                  <td className={sDetail.iconContainer}>
+                    <FontAwesomeIcon className={sDetail.processing} icon={faCircle} />
+                    Đang thực hiện
+                  </td>
                 </tr>
                 <tr>
                   <td>2010007</td>
-                  <td>Vắng</td>
+                  <td className={sDetail.iconContainer}>
+                    <FontAwesomeIcon className={sDetail.absent} icon={faCircle} />
+                    Vắng
+                  </td>
                 </tr>
                 <tr>
                   <td>20100017</td>
-                  <td>Đã hoàn thành</td>
+                  <td className={sDetail.iconContainer}>
+                    <FontAwesomeIcon className={sDetail.accomplished} icon={faCircle} />
+                    Đã hoàn thành
+                  </td>
                 </tr>
               </tbody>
             </table>

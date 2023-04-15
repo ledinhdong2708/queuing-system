@@ -7,7 +7,7 @@ import Button from '../.././component/Button/Button'
 import s from './AddService.module.scss'
 import Input from '../.././component/Input/Input'
 
-const AddService = () => {
+const UpdateListService = () => {
   const [isHover, setIsHover] = useState(false)
   const handleMouseEnter = () => {
     setIsHover(true)
@@ -48,11 +48,15 @@ const AddService = () => {
             <p>
               <FontAwesomeIcon className={s.hyphenIcon} icon={faChevronRight} />
             </p>
-            <p className={s.pContent}>Danh sách thiết bị</p>
+            <p className={s.pContent}>Danh sách dịch vụ</p>
             <p>
               <FontAwesomeIcon className={s.hyphenIcon} icon={faChevronRight} />
             </p>
-            <p className={s.pContent}>Thêm thiết bị</p>
+            <p className={s.pContent}>Chi tiết</p>
+            <p>
+              <FontAwesomeIcon className={s.hyphenIcon} icon={faChevronRight} />
+            </p>
+            <p className={s.pContent}>Cập nhật</p>
           </div>
           <NavAvatar />
         </div>
@@ -127,10 +131,10 @@ const AddService = () => {
         </div>
         <div className={s.btnContainer}>
           <Button onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} style={btnStyle} name='Hủy bỏ' />
-          <Button name='Thêm dịch vụ' />
+          <Button name='Cập nhật'/>
         </div>
       </div>
     </div>
   )
 }
-export default AddService
+export default UpdateListService
