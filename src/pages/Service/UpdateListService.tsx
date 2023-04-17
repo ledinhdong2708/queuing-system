@@ -131,7 +131,7 @@ const UpdateListService = () => {
         </div>
         <div className={s.btnContainer}>
           <Button onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} style={btnStyle} name='Hủy bỏ' />
-          <Button name='Cập nhật'/>
+          <Button name='Cập nhật' />
         </div>
       </div>
     </div>

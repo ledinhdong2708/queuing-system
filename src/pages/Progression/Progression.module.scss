@@ -1,0 +1,32 @@
+.inputDevice {
+  display: flex;
+}
+.keyWord {
+  position: absolute;
+  right: 0;
+  margin-right: 1rem;
+}
+.serviceName,
+.status,
+.powerSupply,
+.choseDate {
+  margin-right: 1rem;
+  position: relative;
+  width: 20%;
+}
+//ICON
+.iconContainer {
+  display: flex;
+  align-items: center;
+}
+.waiting,
+.isUse {
+  font-size: 8px;
+  margin-right: 0.5rem;
+}
+.waiting {
+  color: #4277ff;
+}
+.isUse {
+  color: #7e7d88;
+}
