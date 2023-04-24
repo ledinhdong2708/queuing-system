@@ -1,0 +1,45 @@
+.pContent {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  padding-right: 1rem;
+  color: #7e7d88 !important;
+}
+.pContent:last-child {
+  color: #ff7506 !important;
+}
+.newProgression {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+  box-shadow: 2px 2px 8px rgba(232, 239, 244, 0.8);
+  border-radius: 16px;
+}
+.newProgression h1 {
+  color: #ff7506;
+}
+.newProgression p {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+}
+.dropdownContainer {
+  position: relative;
+  width: 50%;
+  margin-top: 1rem;
+}
+.btnContainer {
+  margin-top: 5rem;
+  display: flex;
+}
+.btnContainer button {
+  margin: 1rem;
+}
+//Icon
+.hyphenIcon {
+  font-size: 13px;
+  color: #7e7d88;
+}

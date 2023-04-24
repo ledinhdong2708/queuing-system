@@ -1,0 +1,66 @@
+.pContent {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  padding-right: 1rem;
+  color: #7e7d88 !important;
+}
+.pContent:last-child {
+  color: #ff7506 !important;
+}
+.inforProgressionTitle {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ff7506;
+  margin-bottom: 1rem;
+}
+.inforProgressionContentContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.personalInformation {
+  display: flex;
+  margin-bottom: 1rem;
+}
+.personalInformationKey {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  width: 7rem;
+}
+.personalInformationValue {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #535261;
+}
+.pTitle {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+
+  color: #ff7506;
+}
+
+.inforProgressionContainer {
+  margin-top: 2rem;
+  background-color: white;
+  padding: 1rem;
+  width: 90%;
+  height: 70%;
+  box-shadow: 2px 2px 8px rgba(232, 239, 244, 0.8);
+  border-radius: 16px;
+}
+//Icon
+.hyphenIcon {
+  font-size: 13px;
+  color: #7e7d88;
+}
+.waiting {
+  color: #4277ff;
+  font-size: 8px;
+  margin-right: 0.3rem;
+}

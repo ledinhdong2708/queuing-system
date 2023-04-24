@@ -17,6 +17,8 @@ import UpdateDevice from '@pages/Device/UpdateDevice'
 import AddService from '@pages/Service/AddService'
 import DetailService from '@pages/Service/DetailService'
 import UpdateListService from '@pages/Service/UpdateListService'
+import AddProgression from '@pages/Progression/AddProgression'
+import DetailProgression from '@pages/Progression/DetailProgression'
 
 const App: FC = () => {
   return (
@@ -36,6 +38,8 @@ const App: FC = () => {
         <Route path='/service/add-service' element={<AddService />}></Route>
         <Route path='/service/detail-service' element={<DetailService />}></Route>
         <Route path='/service/detail-service/update-list-service' element={<UpdateListService />}></Route>
+        <Route path='/progression/add-progression' element={<AddProgression />}></Route>
+        <Route path='/progression/detail-progression' element={<DetailProgression />}></Route>
       </Routes>
     </div>
   )

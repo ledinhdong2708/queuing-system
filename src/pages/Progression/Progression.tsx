@@ -9,7 +9,8 @@ import {
   faMagnifyingGlass,
   faCaretRight,
   faCaretLeft,
-  faCircle
+  faCircle,
+  faSquarePlus
 } from '@fortawesome/free-solid-svg-icons'
 import DateInput from '../.././component/DateInput/DateInput'
 import NavAvatar from '../.././component/NavAvatar/NavAvatar'
@@ -20,6 +21,10 @@ import DropdownPowerSupply from '../.././component/DropdownPowerSupply/DropdownP
 const Progression = () => {
   return (
     <div className='Container'>
+      <Link to='add-progression' className={s.addDevice}>
+        <FontAwesomeIcon className={s.iconAdd} icon={faSquarePlus} />
+        <p>Cấp số mới</p>
+      </Link>
       <MenuBarProgression />
       <div className={s.rightContainer}>
         <div className='navContainer'>
@@ -86,7 +91,7 @@ const Progression = () => {
               </td>
               <td>Kiosk</td>
               <td>
-                <Link to='/'>Chi tiết</Link>
+                <Link to='detail-progression'>Chi tiết</Link>
               </td>
             </tr>
             <tr>
@@ -101,7 +106,7 @@ const Progression = () => {
               </td>
               <td>Kiosk</td>
               <td>
-                <Link to='/'>Chi tiết</Link>
+                <Link to='detail-progression'>Chi tiết</Link>
               </td>
             </tr>
             <tr>
@@ -116,7 +121,7 @@ const Progression = () => {
               </td>
               <td>Hệ thống</td>
               <td>
-                <Link to='/'>Chi tiết</Link>
+                <Link to='detail-progression'>Chi tiết</Link>
               </td>
             </tr>
             <tr>
@@ -131,7 +136,7 @@ const Progression = () => {
               </td>
               <td>Hệ thống</td>
               <td>
-                <Link to='/'>Chi tiết</Link>
+                <Link to='detail-progression'>Chi tiết</Link>
               </td>
             </tr>
             <tr>
@@ -146,7 +151,7 @@ const Progression = () => {
               </td>
               <td>Kiosk</td>
               <td>
-                <Link to='/'>Chi tiết</Link>
+                <Link to='detail-progression'>Chi tiết</Link>
               </td>
             </tr>
           </tbody>
