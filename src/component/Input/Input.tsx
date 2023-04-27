@@ -8,9 +8,10 @@ interface InputProps {
   disabled?: boolean | undefined
   placeholder?: string | undefined
   id?: string
+  value?: string
 }
 
-const Input: React.FC<InputProps> = ({ type, disabled, placeholder, id }) => {
+const Input: React.FC<InputProps> = ({ type, disabled, placeholder, id, value }) => {
   const classLabel = clsx(styles.input, 'inputPass')
   const classEyeOff = clsx(styles.iconEyeOff, 'icEyeOff')
   function handleClick() {
@@ -41,6 +42,7 @@ const Input: React.FC<InputProps> = ({ type, disabled, placeholder, id }) => {
         className={styles.input}
         placeholder={placeholder}
         style={{ backgroundColor: '#EAEAEC' }}
+        value={value}
       />
     )
   }

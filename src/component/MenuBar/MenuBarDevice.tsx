@@ -8,10 +8,10 @@ import IconDashboard03 from '/public/iconDashboard03.png'
 import IconDashboard04 from '/public/iconDashboard04.png'
 import IconDashboard05 from '/public/iconDashboard05.png'
 import IconDashboard06 from '/public/iconDashboard06.png'
-
+import { getAuth, signOut } from 'firebase/auth'
 const MenuBarDevice = () => {
   const classIconDashboard = clsx(s.iconDashboard, 'tsIconDashboard')
-
+  const auth = getAuth()
   return (
     <div className={s.leftContainer}>
       <img className={s.logo} src={Logo} alt='company logo' />
@@ -39,7 +39,7 @@ const MenuBarDevice = () => {
         <img src={IconDashboard06} alt='icon dashboard 06' />
         <p>Cập nhật hệ thống</p>
       </Link>
-      <button>【➜ Đăng xuất</button>
+      <button onClick={() => signOut(auth)}>【➜ Đăng xuất</button>
     </div>
   )
 }
